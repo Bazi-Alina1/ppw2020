@@ -1,0 +1,53 @@
+body{
+display: grid ;
+grid-template-areas:  
+"main-header main-header main-header main-header main-header main-header"
+"navigare navigare navigare navigare navigare navigare"
+"blok-menu contents contents contents contents contents contents"
+"main-footer " ;
+grid-template-columns : 200px 200px 200px 200px 200px auto 200px;
+grid-template-rows:   200px auto 200px;
+margin: 0;
+padding: 0;
+font-family: Verdana, Tahoma, sans-serif;
+font-size: 1.5vw;
+}
+.main-header{
+    background-color: lavender;
+    display: grid;
+    grid-template-columns: 100px 850px;
+    grid-area: main heder ;
+}
+header #logo{
+height: 7.5vw;
+}
+header h1{
+text-transform: uppercase ;
+color: red;
+text-align: center;
+}
+.navigare{
+    background: blue;
+    grid-area: navigare ;
+
+}
+aside{
+    max-height: 400px;
+}
+.blok-menu{
+    background: light seagreen;
+}
+.contents{
+    background: light red ;
+    grid-area: contents ;
+    font-size: 1vw;
+    text-align-last: justify;
+    padding: 30px;
+
+}
+.main-footer{
+    background: lightblue;
+    grid-area: main-footer ;
+    color: beige;
+    text-aling: center;
+}
